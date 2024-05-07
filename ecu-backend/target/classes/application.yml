@@ -1,0 +1,20 @@
+spring:
+  application:
+      name: ecu-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/vehicle_failure
+    username: root
+    password: Sujith@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+blynk:
+  token=blynk.token=dummytoken123456789:
